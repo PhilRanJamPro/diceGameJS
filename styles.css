@@ -19,6 +19,15 @@ body {
 }
 
 
+#title {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+    background: linear-gradient(to bottom,   #ff0000, #ffed00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .container {
     width: 400px;
     text-align: center;
