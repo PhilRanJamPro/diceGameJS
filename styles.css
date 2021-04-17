@@ -1,8 +1,9 @@
-html, body { 
+html,
+body {
     --color-1: #a8e6cf;
-    --color-2: #dcedc1; 
-    --color-3: #ffd3b6; 
-    --color-4: #ffaaa5; 
+    --color-2: #dcedc1;
+    --color-3: #ffd3b6;
+    --color-4: #ffaaa5;
     --color-5: #ff8b94;
     margin: 0;
     padding: 0;
@@ -17,13 +18,44 @@ body {
     color: black;
 }
 
+
 .container {
     width: 400px;
     text-align: center;
     margin: 0 auto;
     background: url("/images/fighter-background.gif") no-repeat;
-    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
-    padding: 0 50px;
+    box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
+    padding: 50px 50px 0 50px;
+}
+
+#message{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    background: linear-gradient(to bottom,   #ff0000, #ffed00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#kenWins {
+    display: none;
+    margin: 0 15px;
+}
+
+#kenWins p,
+#ryuWins p {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+
+    background: linear-gradient(185deg,  #ff0000, #ffed00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#ryuWins {
+    display: none;
+    margin: 0 15px;
 }
 
 .players {
@@ -36,13 +68,36 @@ body {
     border-radius: 10px;
     width: 100px;
     height: 100px;
-    background-color: var(--color-3);
+    background-color: #fbd72b;
     margin: 0 auto;
     font-size: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
+.small {
+    background-color: #f9484a;
+    background-image: linear-gradient(315deg, #f9484a 20%, #fbd72b 80%);
+}
+.medium {
+    background-color: #f9484a;
+    background-image: linear-gradient(315deg, #f9484a 40%, #fbd72b 60%);
+}
+.large {
+    background-color: #f9484a;
+    background-image: linear-gradient(315deg, #f9484a 60%, #fbd72b 40%);
+}
+.x-large {
+    background-color: #f9484a;
+    background-image: linear-gradient(315deg, #f9484a 80%, #fbd72b 20%);
+}
+.xx-large {
+    background-color: #f9484a;
+    background-image: linear-gradient(315deg, #f9484a 100%, #fbd72b 0%);
+}
+
 
 
 button {
@@ -56,25 +111,25 @@ button {
 }
 
 #rollBtn {
-    background-color: var(--color-5);
-    margin: 50px auto;
+    background-color: #f54545;
+    margin: 46px auto;
     display: inline-block;
+    font-family: 'Press Start 2P', cursive;
 }
 
 #resetBtn {
-    background-color: var(--color-4);
-    margin: 50px auto;
-    display: inline-block;
+    background-color: #f54545;
+    margin: 0px auto;
+    display: none;
+    font-family: 'Press Start 2P', cursive;
 }
 
 button:focus {
     outline: none;
 }
 
-#resetBtn {
-    display: none;
-}
+
 
 .active {
-    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+    box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
 }
