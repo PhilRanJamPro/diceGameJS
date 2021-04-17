@@ -20,7 +20,7 @@ function showResetButton() {
   ken.style.display = "none";
   ryu.style.display = "none";
   rollBtn.style.display = "none";
-  resetBtn.style.display = "block";
+  resetBtn.style.display = "inline-block";
 }
 
 /* Hook up a click event listener to the Roll Dice Button. */

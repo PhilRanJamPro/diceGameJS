@@ -28,6 +28,16 @@ body {
     padding: 50px 50px 0 50px;
 }
 
+
+#playerName {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+
+    background: linear-gradient(185deg,  #96d7f5, #4981e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #message{
     text-align: center;
     font-family: 'Press Start 2P', cursive;
@@ -58,6 +68,11 @@ body {
     margin: 0 15px;
 }
 
+#ken, #ryu {
+    display: inline-block;
+    margin: 95px auto 0 auto;
+}
+
 .players {
     width: 100%;
     display: flex;
@@ -66,60 +81,65 @@ body {
 
 .dice {
     border-radius: 10px;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 50px;
     background-color: #fbd72b;
-    margin: 0 auto;
-    font-size: 80px;
+    margin: 0 25px;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
 }
 
 
 .small {
     background-color: #f9484a;
-    background-image: linear-gradient(315deg, #f9484a 20%, #fbd72b 80%);
+    background-image: linear-gradient(to left, #f9484a 20%, #fbd72b 0%);
 }
 .medium {
     background-color: #f9484a;
-    background-image: linear-gradient(315deg, #f9484a 40%, #fbd72b 60%);
+    background-image: linear-gradient(to left, #f9484a 40%, #fbd72b 0%);
 }
 .large {
     background-color: #f9484a;
-    background-image: linear-gradient(315deg, #f9484a 60%, #fbd72b 40%);
+    background-image: linear-gradient(to left, #f9484a 60%, #fbd72b 0%);
 }
 .x-large {
     background-color: #f9484a;
-    background-image: linear-gradient(315deg, #f9484a 80%, #fbd72b 20%);
+    background-image: linear-gradient(to left, #f9484a 80%, #fbd72b 0%);
 }
 .xx-large {
     background-color: #f9484a;
-    background-image: linear-gradient(315deg, #f9484a 100%, #fbd72b 0%);
+    background-image: linear-gradient(to left, #f9484a 100%, #fbd72b 0%);
 }
 
 
 
 button {
     color: #fff;
-    padding: 20px 30px;
+    padding: 10px 30px;
     font-size: 20px;
-    margin-top: 40px;
+    
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 #rollBtn {
-    background-color: #f54545;
-    margin: 46px auto;
-    display: inline-block;
     font-family: 'Press Start 2P', cursive;
+    background-color: #f54545;
+    margin: 22px auto 0 auto;
+    
+    display: inline-block;
+   
 }
 
 #resetBtn {
     background-color: #f54545;
-    margin: 0px auto;
+    margin: 22px auto 0 auto;
     display: none;
     font-family: 'Press Start 2P', cursive;
 }
