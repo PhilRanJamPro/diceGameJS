@@ -59,6 +59,14 @@ body {
 #kenWins {
     display: none;
     margin: 0 15px;
+   
+}
+
+
+#kenWin, #ryuWin  {
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 #kenWins p,
@@ -70,6 +78,12 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+}
+
+#KO{
+    position: absolute;
+    top: 250px;
+    left: 460px;
 }
 
 #ryuWins {
