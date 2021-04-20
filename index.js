@@ -15,10 +15,14 @@ const ryuWins = document.getElementById("ryuWins");
 const kenWins = document.getElementById("kenWins");
 const ken = document.getElementById("ken");
 const ryu = document.getElementById("ryu");
+const Ken = document.getElementById("Ken");
+const Ryu = document.getElementById("Ryu");
 
 function showResetButton() {
   ken.style.display = "none";
   ryu.style.display = "none";
+  Ken.style.display = "none";
+  Ryu.style.display = "none";
   rollBtn.style.display = "none";
   resetBtn.style.display = "inline-block";
 }
@@ -34,6 +38,12 @@ rollBtn.addEventListener("click", function () {
     player1Dice.classList.remove("active");
     player2Dice.classList.add("active");
     message.textContent = "Player 2 Turn";
+    ken.style.display = "none";
+    Ken.style.display = "block";
+    ryu.style.display = 'block'
+    Ryu.style.display = 'none';
+    
+    
   } else {
     player2Score += randomNumber;
     player2Scoreboard.textContent = player2Score;
@@ -41,6 +51,10 @@ rollBtn.addEventListener("click", function () {
     player2Dice.classList.remove("active");
     player1Dice.classList.add("active");
     message.textContent = "Player 1 Turn";
+    ryu.style.display = "none";
+    Ryu.style.display = "block";
+    ken.style.display = 'block';
+    Ken.style.display = 'none';
   }
 
   if (player1Score >= 20) {
